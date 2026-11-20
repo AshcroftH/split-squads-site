@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join a league · Split Squads</title>
+<meta name="description" content="You've been invited to a Split Squads league.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="icon.png" alt="Split Squads app icon">
+  <h1>You're invited</h1>
+  <p>to a Split Squads league</p>
+</header>
+<main>
+  <section>
+    <p>Opening Split Squads… If nothing happens, tap the button below.</p>
+    <p><a class="cta" id="open" href="#">Open in Split Squads</a></p>
+    <div class="card">
+      <p><strong>Don't have the app yet?</strong> Get Split Squads on your iPhone, build a squad of four, and everyone does their 2km rating run. Then open this link again to join the league.</p>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Left Form Ltd · <a href="./">Home</a> · <a href="support.html">Support</a></footer>
+<script>
+  // splitsquads://league-invite/<token> opens the league invite in the app
+  var token = new URLSearchParams(location.search).get('league') || '';
+  var link = 'splitsquads://league-invite/' + encodeURIComponent(token);
+  document.getElementById('open').href = link;
+  if (token) location.href = link;
+</script>
+</body>
+</html>
