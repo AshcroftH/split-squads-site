@@ -31,6 +31,7 @@
   <h3>Your account</h3>
   <ul>
     <li><strong>Sign in with Apple:</strong> a unique identifier from Apple, plus your name and email address if you choose to share them. If you use "Hide My Email", we only see Apple's relay address. We also keep a token Apple gives us at sign-in, stored encrypted, used only to disconnect your Apple ID from Split Squads when you delete your account (so you don't have to sign in again to delete).</li>
+    <li><strong>Sign in with Strava</strong> (if you use it instead): your Strava athlete ID, the name, profile photo, city and country on your Strava profile, and the sign-in tokens Strava gives us. We use them only to sign you in; the app doesn't read your Strava activities.</li>
     <li><strong>Display name:</strong> the name you choose, which other users can see.</li>
   </ul>
   <h3>Your runs</h3>
@@ -45,10 +46,11 @@
     <li>Messages you send in squad chat (and in match chat, which earlier versions of the app had).</li>
     <li>Reports you make about other users or content, and reports made about you.</li>
     <li>Runners you've blocked.</li>
+    <li>Squads you follow (your Favourites). Nobody else can see who you follow.</li>
   </ul>
   <h3>Your device</h3>
   <ul>
-    <li>A push notification token, if you allow notifications, so we can tell you about matches and messages.</li>
+    <li>A push notification token, if you allow notifications, so we can tell you about matches and messages, and which kinds of notification you've switched off.</li>
   </ul>
   <p>We don't use advertising, analytics or tracking SDKs, we don't track you across other apps or websites, and we never sell your data.</p>
 </section>
@@ -61,7 +63,7 @@
 
 <section>
   <h2>What other users can see</h2>
-  <p>Your display name, rating, squad, run times and match results are visible to other Split Squads users, for example on squad pages, match pages and league tables. Chat messages can be seen by the members of that chat (your squad, or both squads in a match).</p>
+  <p>Your display name, rating, squad, run times and match results are visible to other Split Squads users, for example on squad pages, match pages and league tables. Chat messages can be seen by the members of your squad.</p>
 </section>
 
 <section>
@@ -69,7 +71,7 @@
   <ul>
     <li>To run the service: your account, matchmaking, results, leagues and chat (the legal basis is <em>contract</em>).</li>
     <li>To keep the community safe: reviewing reports and stopping cheating, such as impossible run times (the legal basis is <em>legitimate interests</em>).</li>
-    <li>To send push notifications you've allowed (the legal basis is <em>consent</em>, which you can withdraw in iOS Settings).</li>
+    <li>To send push notifications you've allowed (the legal basis is <em>consent</em>). You can switch off each kind in the app (Me → Settings → Notifications), or all of them in iOS Settings.</li>
   </ul>
 </section>
 
@@ -81,6 +83,7 @@
     <li><strong>Neon</strong>: hosts our database.</li>
     <li><strong>Apple</strong>: Sign in with Apple and push notification delivery.</li>
     <li><strong>Expo</strong>: routes push notifications to Apple.</li>
+    <li><strong>Strava</strong>: only if you choose to sign in with Strava, to confirm who you are.</li>
   </ul>
   <p>Some of these providers may process data outside the UK. Where they do, they use safeguards recognised under UK data protection law, such as the International Data Transfer Addendum or Standard Contractual Clauses. We may also disclose data if the law requires it.</p>
 </section>
